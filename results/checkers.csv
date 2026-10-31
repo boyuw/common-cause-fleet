@@ -1,0 +1,5 @@
+condition,n,n_author_wrong,author_accuracy,author_error_rate,catch_rate,changed_rate,false_alarm_rate,net_accuracy,net_accuracy_union
+same-same,408,125,0.6936,0.3064,0.3200,0.7440,0.4382,0.4877,0.7917
+same-cross,408,125,0.6936,0.3064,0.0960,1.0000,0.6184,0.2941,0.7230
+cross-same,408,241,0.4093,0.5907,0.5104,0.7759,0.3653,0.5613,0.7108
+cross-cross,408,241,0.4093,0.5907,0.2075,1.0000,0.6287,0.2745,0.5319

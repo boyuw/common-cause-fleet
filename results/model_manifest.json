@@ -1,0 +1,109 @@
+{
+  "models": {
+    "qwen2.5:14b-instruct": {
+      "family": "qwen2",
+      "families": [
+        "qwen2"
+      ],
+      "params": "14.8B",
+      "quant": "Q4_K_M"
+    },
+    "qwen2.5-coder:32b": {
+      "family": "qwen2",
+      "families": [
+        "qwen2"
+      ],
+      "params": "32.8B",
+      "quant": "Q4_K_M"
+    },
+    "llama3.1:8b": {
+      "family": "llama",
+      "families": [
+        "llama"
+      ],
+      "params": "8.0B",
+      "quant": "Q4_K_M"
+    }
+  },
+  "grid": {
+    "qwen2.5:14b-instruct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "llama3.1:8b": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "qwen2.5-coder:32b": [
+      1,
+      3
+    ]
+  },
+  "panels": {
+    "same_model": [
+      "qwen2.5:14b-instruct",
+      "qwen2.5:14b-instruct",
+      "qwen2.5:14b-instruct",
+      "qwen2.5:14b-instruct",
+      "qwen2.5:14b-instruct"
+    ],
+    "same_family": [
+      "qwen2.5:14b-instruct",
+      "qwen2.5-coder:32b",
+      "qwen2.5:14b-instruct",
+      "qwen2.5-coder:32b",
+      "qwen2.5:14b-instruct"
+    ],
+    "cross_family": [
+      "qwen2.5:14b-instruct",
+      "llama3.1:8b",
+      "qwen2.5:14b-instruct",
+      "llama3.1:8b",
+      "qwen2.5:14b-instruct"
+    ]
+  },
+  "checker_cells": [
+    [
+      "same-same",
+      "qwen2.5:14b-instruct",
+      0,
+      "qwen2.5:14b-instruct"
+    ],
+    [
+      "same-cross",
+      "qwen2.5:14b-instruct",
+      0,
+      "llama3.1:8b"
+    ],
+    [
+      "cross-same",
+      "llama3.1:8b",
+      0,
+      "qwen2.5:14b-instruct"
+    ],
+    [
+      "cross-cross",
+      "llama3.1:8b",
+      0,
+      "llama3.1:8b"
+    ]
+  ],
+  "slot_seed": {
+    "0": 1103,
+    "1": 1140,
+    "2": 1177,
+    "3": 1214,
+    "4": 1251
+  },
+  "temperature_panel": 0.8,
+  "temperature_checker": 0.2,
+  "num_predict_panel": 72,
+  "num_predict_checker": 96,
+  "host": "http://localhost:11434"
+}

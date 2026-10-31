@@ -1,0 +1,17 @@
+level,stratum,phi,n
+same_model,easy,0.8692,1360
+same_model,medium,0.7737,1360
+same_model,hard,0.7826,1360
+same_model,all,0.8177,4080
+same_family,easy,0.4755,272
+same_family,medium,0.4083,272
+same_family,hard,0.4338,272
+same_family,all,0.4870,816
+cross_family,easy,0.5153,680
+cross_family,medium,0.1829,680
+cross_family,hard,0.0763,680
+cross_family,all,0.2718,2040
+same_model_M3,easy,0.7557,1360
+same_model_M3,medium,0.4385,1360
+same_model_M3,hard,0.4956,1360
+same_model_M3,all,0.5847,4080
